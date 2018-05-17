@@ -1,0 +1,8 @@
+# platform :ios, '8.0'
+
+target 'ScratchImageExample' do
+  use_frameworks!
+
+  pod 'ScratchImage', :path => '../'
+
+end
