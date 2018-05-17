@@ -8,12 +8,12 @@
 
 import UIKit
 
-protocol ScratchImageViewDelegate: NSObjectProtocol {
+public protocol ScratchImageViewDelegate: NSObjectProtocol {
     func scratchImageViewScratchBegan(_ imageView: ScratchImageView)
     func scratchImageViewScratchMoved(_ imageView: ScratchImageView)
 }
 
-class ScratchImageView: UIImageView {
+public class ScratchImageView: UIImageView {
     
     // MARK: - Properties
 
@@ -22,13 +22,13 @@ class ScratchImageView: UIImageView {
     private var lineWidth: CGFloat = 20.0
     private var erased: Double = 0.0
     
-    var backgroundImageColor: UIColor? {
+    public var backgroundImageColor: UIColor? {
         didSet {
             guard let backgroundImageColor = backgroundImageColor else {return}
             image = UIImage.fromColor(color: backgroundImageColor)
         }
     }
-    weak var delegate: ScratchImageViewDelegate?
+    public weak var delegate: ScratchImageViewDelegate?
     
     // MARK: - Con(De)structor
     
@@ -38,7 +38,7 @@ class ScratchImageView: UIImageView {
         isUserInteractionEnabled = true
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         isUserInteractionEnabled = true
@@ -46,14 +46,14 @@ class ScratchImageView: UIImageView {
     
     // MARK: - Overridden: UIImageView
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {return}
         
         lastPoint = touch.location(in: self)
         delegate?.scratchImageViewScratchBegan(self)
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard  let touch = touches.first, let point = lastPoint else {return}
         
         let currentLocation = touch.location(in: self)
@@ -65,7 +65,7 @@ class ScratchImageView: UIImageView {
     
     // MARK: - Public methods
     
-    func getScratchPercent() -> Double {
+    public func getScratchPercent() -> Double {
         return erased / Double(frame.width * frame.height)
     }
     
