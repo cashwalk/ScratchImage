@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65181A9A20AD493800CFD787 /* ScratchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65181A9920AD493800CFD787 /* ScratchImageView.swift */; };
-		65181A9E20AD4D3200CFD787 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65181A9D20AD4D3200CFD787 /* UIImageExtension.swift */; };
 		6562022D20AD375600B761E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562022C20AD375600B761E4 /* AppDelegate.swift */; };
 		6562022F20AD375600B761E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6562022E20AD375600B761E4 /* ViewController.swift */; };
 		6562023220AD375600B761E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6562023020AD375600B761E4 /* Main.storyboard */; };
 		6562023420AD375700B761E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6562023320AD375700B761E4 /* Assets.xcassets */; };
 		6562023720AD375700B761E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6562023520AD375700B761E4 /* LaunchScreen.storyboard */; };
 		6562024320AD3FBB00B761E4 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6562024220AD3FBB00B761E4 /* image.jpg */; };
+		8FAA0079BC79053D992487A0 /* Pods_ScratchImageExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CB7141608E067B0E60AC43 /* Pods_ScratchImageExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		65181A9920AD493800CFD787 /* ScratchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScratchImageView.swift; path = ../../Sources/ScratchImageView.swift; sourceTree = "<group>"; };
-		65181A9D20AD4D3200CFD787 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = ../../Sources/UIImageExtension.swift; sourceTree = "<group>"; };
+		0DA134B4CABDD83C2B09DD0D /* Pods-ScratchImageExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchImageExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchImageExample/Pods-ScratchImageExample.release.xcconfig"; sourceTree = "<group>"; };
+		12CB7141608E067B0E60AC43 /* Pods_ScratchImageExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScratchImageExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6562022920AD375600B761E4 /* ScratchImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6562022C20AD375600B761E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6562022E20AD375600B761E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +27,7 @@
 		6562023620AD375700B761E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6562023820AD375700B761E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6562024220AD3FBB00B761E4 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		8EB15BD6DCB0A9AF96232711 /* Pods-ScratchImageExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScratchImageExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScratchImageExample/Pods-ScratchImageExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FAA0079BC79053D992487A0 /* Pods_ScratchImageExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,9 +45,10 @@
 		6562022020AD375600B761E4 = {
 			isa = PBXGroup;
 			children = (
-				6562023F20AD3E0700B761E4 /* ScratchImage */,
 				6562022B20AD375600B761E4 /* ScratchImageExample */,
 				6562022A20AD375600B761E4 /* Products */,
+				A5C50008BA63DDE146B9B220 /* Pods */,
+				7F54F501D597CAB4D907D20E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,13 +74,21 @@
 			path = ScratchImageExample;
 			sourceTree = "<group>";
 		};
-		6562023F20AD3E0700B761E4 /* ScratchImage */ = {
+		7F54F501D597CAB4D907D20E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65181A9920AD493800CFD787 /* ScratchImageView.swift */,
-				65181A9D20AD4D3200CFD787 /* UIImageExtension.swift */,
+				12CB7141608E067B0E60AC43 /* Pods_ScratchImageExample.framework */,
 			);
-			path = ScratchImage;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5C50008BA63DDE146B9B220 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EB15BD6DCB0A9AF96232711 /* Pods-ScratchImageExample.debug.xcconfig */,
+				0DA134B4CABDD83C2B09DD0D /* Pods-ScratchImageExample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -88,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6562023B20AD375700B761E4 /* Build configuration list for PBXNativeTarget "ScratchImageExample" */;
 			buildPhases = (
+				89262BE1C42DD15BC2C6A794 /* [CP] Check Pods Manifest.lock */,
 				6562022520AD375600B761E4 /* Sources */,
 				6562022620AD375600B761E4 /* Frameworks */,
 				6562022720AD375600B761E4 /* Resources */,
+				B3746EDCCD53F65DEAAA2073 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,14 +160,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		89262BE1C42DD15BC2C6A794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScratchImageExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3746EDCCD53F65DEAAA2073 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ScratchImageExample/Pods-ScratchImageExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScratchImage/ScratchImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScratchImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScratchImageExample/Pods-ScratchImageExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6562022520AD375600B761E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65181A9A20AD493800CFD787 /* ScratchImageView.swift in Sources */,
 				6562022F20AD375600B761E4 /* ViewController.swift in Sources */,
-				65181A9E20AD4D3200CFD787 /* UIImageExtension.swift in Sources */,
 				6562022D20AD375600B761E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +347,7 @@
 		};
 		6562023C20AD375700B761E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB15BD6DCB0A9AF96232711 /* Pods-ScratchImageExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -317,6 +367,7 @@
 		};
 		6562023D20AD375700B761E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DA134B4CABDD83C2B09DD0D /* Pods-ScratchImageExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

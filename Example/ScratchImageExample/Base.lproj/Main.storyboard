@@ -24,7 +24,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-E4-M0M">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="500"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-zP-e0Z" customClass="ScratchImageView" customModule="ScratchImageExample" customModuleProvider="target">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-zP-e0Z" customClass="ScratchImageView" customModule="ScratchImage">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="500"/>
                                     </imageView>
                                 </subviews>

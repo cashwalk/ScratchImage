@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ScratchImage
 
 class ViewController: UIViewController {
     

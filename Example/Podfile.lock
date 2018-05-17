@@ -1,0 +1,16 @@
+PODS:
+  - ScratchImage (0.1.0)
+
+DEPENDENCIES:
+  - ScratchImage (from `../`)
+
+EXTERNAL SOURCES:
+  ScratchImage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ScratchImage: e8391f6b455db618d793d409062e9eb60786f912
+
+PODFILE CHECKSUM: 86bf3ff9a337c27543d01557f6480d36becd4b0a
+
+COCOAPODS: 1.5.2
