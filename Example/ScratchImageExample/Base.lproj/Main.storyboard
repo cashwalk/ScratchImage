@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScratchImageExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-MK-MQZ">
+                                <rect key="frame" x="12" y="83" width="350" height="500"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="rCt-E4-M0M">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="500"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ctq-zP-e0Z" customClass="ScratchImageView" customModule="ScratchImageExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="500"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rCt-E4-M0M" firstAttribute="leading" secondItem="E9W-MK-MQZ" secondAttribute="leading" id="5ty-kV-cbq"/>
+                                    <constraint firstAttribute="trailing" secondItem="rCt-E4-M0M" secondAttribute="trailing" id="8FV-Hu-l3z"/>
+                                    <constraint firstAttribute="trailing" secondItem="ctq-zP-e0Z" secondAttribute="trailing" id="RFk-E2-DUg"/>
+                                    <constraint firstAttribute="bottom" secondItem="rCt-E4-M0M" secondAttribute="bottom" id="cwe-R7-ruh"/>
+                                    <constraint firstItem="ctq-zP-e0Z" firstAttribute="leading" secondItem="E9W-MK-MQZ" secondAttribute="leading" id="nII-tU-afl"/>
+                                    <constraint firstItem="rCt-E4-M0M" firstAttribute="top" secondItem="E9W-MK-MQZ" secondAttribute="top" id="nsv-HC-KD6"/>
+                                    <constraint firstAttribute="bottom" secondItem="ctq-zP-e0Z" secondAttribute="bottom" id="xVd-9T-AXB"/>
+                                    <constraint firstItem="ctq-zP-e0Z" firstAttribute="top" secondItem="E9W-MK-MQZ" secondAttribute="top" id="yNr-09-l6u"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csD-HG-fa1">
+                                <rect key="frame" x="187" y="591" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="E9W-MK-MQZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="63" id="3EZ-2c-Aan"/>
+                            <constraint firstItem="csD-HG-fa1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZWV-yk-ybA"/>
+                            <constraint firstItem="csD-HG-fa1" firstAttribute="top" secondItem="E9W-MK-MQZ" secondAttribute="bottom" constant="8" id="aCS-sS-MG9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E9W-MK-MQZ" secondAttribute="bottom" constant="84" id="dtB-DW-n4f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E9W-MK-MQZ" secondAttribute="trailing" constant="13" id="gJS-ts-oBA"/>
+                            <constraint firstItem="E9W-MK-MQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="qLe-y8-6wS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="percentLabel" destination="csD-HG-fa1" id="TJZ-vb-blA"/>
+                        <outlet property="scratchImageView" destination="ctq-zP-e0Z" id="sCK-7b-CW8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image.jpg" width="1440" height="1920"/>
+    </resources>
+</document>
