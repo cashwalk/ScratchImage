@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = '0.2.1'
   s.summary      = 'Scratchable UIImageView'
   s.homepage     = 'https://github.com/cashwalk/ScratchImage'
-  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { 'DongHee Kang' => 'kanglpmg@gmail.com' }
   s.source       = { :git => 'https://github.com/cashwalk/ScratchImage.git', :tag => s.version.to_s }
   s.documentation_url = 'https://github.com/cashwalk/ScratchImage/blob/master/README.md'
