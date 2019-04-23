@@ -31,8 +31,8 @@ public class ScratchImageView: UIImageView {
     
     // MARK: - Con(De)structor
     
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
+    override public init(image: UIImage?) {
+        super.init(image: image)
         
         isUserInteractionEnabled = true
     }
