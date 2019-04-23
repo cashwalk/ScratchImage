@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  ScratchImageExample
 //
-//  Created by DongHeeKang on 2018. 5. 17..
-//  Copyright © 2018년 k-lpmg. All rights reserved.
+//  Created by cashwalk on 2018. 5. 17..
+//  Copyright © 2018년 cashwalk. All rights reserved.
 //
 
 import UIKit
