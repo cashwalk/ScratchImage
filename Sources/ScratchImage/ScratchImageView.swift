@@ -16,11 +16,6 @@ public protocol ScratchImageViewDelegate: NSObjectProtocol {
 public class ScratchImageView: UIImageView {
     
     // MARK: - Properties
-
-    private var lastPoint: CGPoint?
-    private var lineType: CGLineCap = .square
-    private var lineWidth: CGFloat = 20.0
-    private var erased: Double = 0.0
     
     public var backgroundImageColor: UIColor? {
         didSet {
@@ -28,7 +23,12 @@ public class ScratchImageView: UIImageView {
             image = UIImage.fromColor(color: backgroundImageColor)
         }
     }
+    public var lineType: CGLineCap = .square
+    public var lineWidth: CGFloat = 20.0
     public weak var delegate: ScratchImageViewDelegate?
+
+    private var lastPoint: CGPoint?
+    private var erased: Double = 0.0
     
     // MARK: - Con(De)structor
     
@@ -47,20 +47,23 @@ public class ScratchImageView: UIImageView {
     // MARK: - Overridden: UIImageView
     
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard let touch = touches.first else {return}
+        defer {
+            delegate?.scratchImageViewScratchBegan(self)
+        }
         
+        guard let touch = touches.first else {return}
         lastPoint = touch.location(in: self)
-        delegate?.scratchImageViewScratchBegan(self)
     }
     
     override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        guard  let touch = touches.first, let point = lastPoint else {return}
+        defer {
+            delegate?.scratchImageViewScratchMoved(self)
+        }
         
+        guard let touch = touches.first, let point = lastPoint else {return}
         let currentLocation = touch.location(in: self)
         eraseBetween(fromPoint: point, currentPoint: currentLocation)
-        
         lastPoint = currentLocation
-        delegate?.scratchImageViewScratchMoved(self)
     }
     
     // MARK: - Public methods

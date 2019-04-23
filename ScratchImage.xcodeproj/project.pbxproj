@@ -59,9 +59,9 @@
 			children = (
 				658E8BAB226EDFCB008423C5 /* ScratchImage.h */,
 				658E8BAC226EDFCB008423C5 /* Info.plist */,
+				658E8BB3226EDFFE008423C5 /* Sources */,
 				658E8BBE226EE028008423C5 /* ScratchImageExample */,
 				658E8BA9226EDFCB008423C5 /* Products */,
-				658E8BB3226EDFFE008423C5 /* Sources */,
 				658E8BCF226EE08B008423C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
