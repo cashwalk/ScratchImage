@@ -7,15 +7,26 @@
 ScratchImage is scratchable UIImageView
 
 <div>
-<img width="200" src="https://user-images.githubusercontent.com/15151687/40161385-9b31ed20-59eb-11e8-849a-47ace71710e6.png">
+<img width="375" src="https://user-images.githubusercontent.com/15151687/40161385-9b31ed20-59eb-11e8-849a-47ace71710e6.png">
 </div>
 
 ## Installation
 
-- **Using [CocoaPods](https://cocoapods.org)**:
+#### CocoaPods (iOS 8+)
 
 ```ruby
+platform :ios, '8.0'
+use_frameworks!
+
+target '<Your Target Name>' do
 pod 'ScratchImage'
+end
+```
+
+### Carthage (iOS 8+)
+
+```ruby
+github "cashwalk/ScratchImage"
 ```
 
 ## LICENSE
