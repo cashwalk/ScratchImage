@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var percentLabel: UILabel! {
         didSet {
-            percentLabel.font = UIFont.systemFont(ofSize: 20, weight: .semibold)
+            percentLabel.font = UIFont.boldSystemFont(ofSize: 20)
         }
     }
     
