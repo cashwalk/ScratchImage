@@ -21,6 +21,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ2-lh-a9o">
+                                <rect key="frame" x="317" y="28" width="42" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="reset"/>
+                                <connections>
+                                    <action selector="resetButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEh-tv-U6h"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9W-MK-MQZ">
                                 <rect key="frame" x="12" y="83" width="350" height="500"/>
                                 <subviews>
@@ -56,7 +64,9 @@
                             <constraint firstItem="csD-HG-fa1" firstAttribute="top" secondItem="E9W-MK-MQZ" secondAttribute="bottom" constant="8" id="aCS-sS-MG9"/>
                             <constraint firstItem="ZaT-C9-Rsg" firstAttribute="top" secondItem="E9W-MK-MQZ" secondAttribute="bottom" constant="84" id="dtB-DW-n4f"/>
                             <constraint firstAttribute="trailing" secondItem="E9W-MK-MQZ" secondAttribute="trailing" constant="13" id="gJS-ts-oBA"/>
+                            <constraint firstAttribute="trailing" secondItem="YQ2-lh-a9o" secondAttribute="trailing" constant="16" id="gra-ip-wWA"/>
                             <constraint firstItem="E9W-MK-MQZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="12" id="qLe-y8-6wS"/>
+                            <constraint firstItem="YQ2-lh-a9o" firstAttribute="top" secondItem="fYF-np-Juh" secondAttribute="bottom" constant="8" id="tgx-T1-ucP"/>
                         </constraints>
                     </view>
                     <connections>
@@ -66,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+            <point key="canvasLocation" x="535" y="132"/>
         </scene>
     </scenes>
     <resources>

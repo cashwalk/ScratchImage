@@ -11,8 +11,6 @@ import ScratchImage
 
 class ViewController: UIViewController {
     
-    // MARK: - Properties
-    
     @IBOutlet weak var scratchImageView: ScratchImageView! {
         didSet {
             scratchImageView.backgroundImageColor = UIColor.brown
@@ -25,12 +23,11 @@ class ViewController: UIViewController {
         }
     }
     
-    // MARK: - Overridden: UIViewController
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBAction func resetButtonClicked(_ sender: Any) {
+        scratchImageView.reset()
+        percentLabel.text = nil
     }
-
+    
 }
 
 // MARK: - ScratchImageViewDelegate
