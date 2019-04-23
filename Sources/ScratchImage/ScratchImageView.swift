@@ -19,8 +19,7 @@ public class ScratchImageView: UIImageView {
     
     public var backgroundImageColor: UIColor? {
         didSet {
-            guard let backgroundImageColor = backgroundImageColor else {return}
-            image = UIImage.fromColor(color: backgroundImageColor)
+            reset()
         }
     }
     public var lineType: CGLineCap = .square
@@ -51,8 +50,9 @@ public class ScratchImageView: UIImageView {
             delegate?.scratchImageViewScratchBegan(self)
         }
         
-        guard let touch = touches.first else {return}
-        lastPoint = touch.location(in: self)
+        if let touch = touches.first {
+            lastPoint = touch.location(in: self)
+        }
     }
     
     override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -60,10 +60,11 @@ public class ScratchImageView: UIImageView {
             delegate?.scratchImageViewScratchMoved(self)
         }
         
-        guard let touch = touches.first, let point = lastPoint else {return}
-        let currentLocation = touch.location(in: self)
-        eraseBetween(fromPoint: point, currentPoint: currentLocation)
-        lastPoint = currentLocation
+        if let touch = touches.first, let point = lastPoint {
+            let currentLocation = touch.location(in: self)
+            eraseBetween(from: point, current: currentLocation)
+            lastPoint = currentLocation
+        }
     }
     
     // MARK: - Public methods
@@ -72,12 +73,21 @@ public class ScratchImageView: UIImageView {
         return erased / Double(frame.width * frame.height)
     }
     
+    public func reset() {
+        guard let backgroundImageColor = backgroundImageColor else {return}
+        image = UIImage.fromColor(color: backgroundImageColor)
+    }
+    
     // MARK: - Private methods
     
-    private func eraseBetween(fromPoint: CGPoint, currentPoint: CGPoint) {
+    private func eraseBetween(from fromPoint: CGPoint, current currentPoint: CGPoint) {
         UIGraphicsBeginImageContext(self.frame.size)
-        
         image?.draw(in: self.bounds)
+        
+        defer {
+            image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+        }
         
         let path = CGMutablePath()
         path.move(to: fromPoint)
@@ -91,14 +101,10 @@ public class ScratchImageView: UIImageView {
         context.addPath(path)
         context.strokePath()
         
-        image = UIGraphicsGetImageFromCurrentImageContext()
-        
         var area = (currentPoint.x - fromPoint.x) * (currentPoint.x - fromPoint.x)
         area += (currentPoint.y - fromPoint.y) * (currentPoint.y - fromPoint.y)
         area = pow(area, 0.5) * lineWidth
         erased += Double(area)
-        
-        UIGraphicsEndImageContext()
     }
     
 }
