@@ -76,6 +76,7 @@ public class ScratchImageView: UIImageView {
     public func reset() {
         guard let backgroundImageColor = backgroundImageColor else {return}
         image = UIImage.fromColor(color: backgroundImageColor)
+        erased = 0.0
     }
     
     // MARK: - Private methods
