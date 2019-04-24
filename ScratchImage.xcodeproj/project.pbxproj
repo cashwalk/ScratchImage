@@ -16,7 +16,6 @@
 		658E8BCA226EE029008423C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658E8BC8226EE029008423C5 /* LaunchScreen.storyboard */; };
 		658E8BD0226EE08B008423C5 /* ScratchImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658E8BA8226EDFCB008423C5 /* ScratchImage.framework */; };
 		658E8BD2226EE0B5008423C5 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 658E8BD1226EE0B5008423C5 /* image.jpg */; };
-		658E8BD7226F0096008423C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658E8BD5226F008F008423C5 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +31,6 @@
 		658E8BC9226EE029008423C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		658E8BCB226EE029008423C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		658E8BD1226EE0B5008423C5 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
-		658E8BD6226F008F008423C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +122,6 @@
 				658E8BD1226EE0B5008423C5 /* image.jpg */,
 				658E8BC6226EE029008423C5 /* Assets.xcassets */,
 				658E8BC8226EE029008423C5 /* LaunchScreen.storyboard */,
-				658E8BD5226F008F008423C5 /* Main.storyboard */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,7 +227,6 @@
 				658E8BCA226EE029008423C5 /* LaunchScreen.storyboard in Resources */,
 				658E8BC7226EE029008423C5 /* Assets.xcassets in Resources */,
 				658E8BD2226EE0B5008423C5 /* image.jpg in Resources */,
-				658E8BD7226F0096008423C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,14 +260,6 @@
 				658E8BC9226EE029008423C5 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		658E8BD5226F008F008423C5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				658E8BD6226F008F008423C5 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -461,6 +449,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ScratchImageExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,6 +470,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ScratchImageExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
