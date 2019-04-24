@@ -17,35 +17,50 @@ public class ScratchImageView: UIImageView {
     
     // MARK: - Properties
     
-    public var backgroundImageColor: UIColor? {
-        didSet {
-            reset()
-        }
-    }
     public var lineType: CGLineCap = .square
     public var lineWidth: CGFloat = 20.0
     public weak var delegate: ScratchImageViewDelegate?
+    
+    private(set) var backgroundImage: UIImage?
+    private(set) var backgroundImageColor: UIColor?
 
     private var lastPoint: CGPoint?
     private var scratched: Double = 0.0
     
     // MARK: - Con(De)structor
     
-    override public init(image: UIImage?) {
-        super.init(image: image)
+    public convenience init(imageColor: UIColor) {
+        self.init(image: nil)
         
-        isUserInteractionEnabled = true
+        backgroundImageColor = imageColor
     }
     
-    required public init?(coder aDecoder: NSCoder) {
+    public override init(image: UIImage?) {
+        super.init(image: image)
+        
+        backgroundImage = image
+        commonInit()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        isUserInteractionEnabled = true
+        commonInit()
     }
     
     // MARK: - Overridden: UIImageView
     
+    override open func layoutSubviews() {
+        super.layoutSubviews()
+        
+        if let backgroundImageColor = backgroundImageColor {
+            image = UIImage.fromColor(color: backgroundImageColor)
+        }
+    }
+    
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
         defer {
             delegate?.scratchImageViewScratchBegan(self)
         }
@@ -56,6 +71,8 @@ public class ScratchImageView: UIImageView {
     }
     
     override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesMoved(touches, with: event)
+        
         defer {
             delegate?.scratchImageViewScratchMoved(self)
         }
@@ -74,8 +91,11 @@ public class ScratchImageView: UIImageView {
     }
     
     public func reset() {
-        guard let backgroundImageColor = backgroundImageColor else {return}
-        image = UIImage.fromColor(color: backgroundImageColor)
+        if let backgroundImageColor = backgroundImageColor {
+            image = UIImage.fromColor(color: backgroundImageColor)
+        } else if let backgroundImage = backgroundImage {
+            image = backgroundImage
+        }
         scratched = 0.0
     }
     
@@ -106,6 +126,12 @@ public class ScratchImageView: UIImageView {
         area += (toPoint.y - fromPoint.y) * (toPoint.y - fromPoint.y)
         area = pow(area, 0.5) * lineWidth
         scratched += Double(area)
+    }
+    
+    // MARK: - Private methods
+    
+    private func commonInit() {
+        isUserInteractionEnabled = true
     }
     
 }
