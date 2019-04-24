@@ -27,7 +27,7 @@ public class ScratchImageView: UIImageView {
     public weak var delegate: ScratchImageViewDelegate?
 
     private var lastPoint: CGPoint?
-    private var erased: Double = 0.0
+    private var scratched: Double = 0.0
     
     // MARK: - Con(De)structor
     
@@ -62,7 +62,7 @@ public class ScratchImageView: UIImageView {
         
         if let touch = touches.first, let point = lastPoint {
             let currentLocation = touch.location(in: self)
-            eraseBetween(from: point, current: currentLocation)
+            scratch(from: point, current: currentLocation)
             lastPoint = currentLocation
         }
     }
@@ -70,18 +70,18 @@ public class ScratchImageView: UIImageView {
     // MARK: - Public methods
     
     public func getScratchPercent() -> Double {
-        return erased / Double(frame.width * frame.height)
+        return scratched / Double(frame.width * frame.height)
     }
     
     public func reset() {
         guard let backgroundImageColor = backgroundImageColor else {return}
         image = UIImage.fromColor(color: backgroundImageColor)
-        erased = 0.0
+        scratched = 0.0
     }
     
     // MARK: - Private methods
     
-    private func eraseBetween(from fromPoint: CGPoint, current currentPoint: CGPoint) {
+    private func scratch(from fromPoint: CGPoint, current currentPoint: CGPoint) {
         UIGraphicsBeginImageContext(self.frame.size)
         image?.draw(in: self.bounds)
         
@@ -105,7 +105,7 @@ public class ScratchImageView: UIImageView {
         var area = (currentPoint.x - fromPoint.x) * (currentPoint.x - fromPoint.x)
         area += (currentPoint.y - fromPoint.y) * (currentPoint.y - fromPoint.y)
         area = pow(area, 0.5) * lineWidth
-        erased += Double(area)
+        scratched += Double(area)
     }
     
 }
