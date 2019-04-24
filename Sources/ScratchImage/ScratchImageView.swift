@@ -62,7 +62,7 @@ public class ScratchImageView: UIImageView {
         
         if let touch = touches.first, let point = lastPoint {
             let currentLocation = touch.location(in: self)
-            scratch(from: point, current: currentLocation)
+            scratch(from: point, to: currentLocation)
             lastPoint = currentLocation
         }
     }
@@ -79,9 +79,9 @@ public class ScratchImageView: UIImageView {
         scratched = 0.0
     }
     
-    // MARK: - Private methods
+    // MARK: - Internal methods
     
-    private func scratch(from fromPoint: CGPoint, current currentPoint: CGPoint) {
+    func scratch(from fromPoint: CGPoint, to toPoint: CGPoint) {
         UIGraphicsBeginImageContext(self.frame.size)
         image?.draw(in: self.bounds)
         
@@ -92,7 +92,7 @@ public class ScratchImageView: UIImageView {
         
         let path = CGMutablePath()
         path.move(to: fromPoint)
-        path.addLine(to: currentPoint)
+        path.addLine(to: toPoint)
         
         let context = UIGraphicsGetCurrentContext()!
         context.setShouldAntialias(true)
@@ -102,8 +102,8 @@ public class ScratchImageView: UIImageView {
         context.addPath(path)
         context.strokePath()
         
-        var area = (currentPoint.x - fromPoint.x) * (currentPoint.x - fromPoint.x)
-        area += (currentPoint.y - fromPoint.y) * (currentPoint.y - fromPoint.y)
+        var area = (toPoint.x - fromPoint.x) * (toPoint.x - fromPoint.x)
+        area += (toPoint.y - fromPoint.y) * (toPoint.y - fromPoint.y)
         area = pow(area, 0.5) * lineWidth
         scratched += Double(area)
     }
