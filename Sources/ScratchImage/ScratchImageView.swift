@@ -36,6 +36,9 @@ public class ScratchImageView: UIImageView {
         self.init(image: nil)
         
         backgroundImageColor = imageColor
+        if let backgroundImageColor = backgroundImageColor {
+            image = UIImage.fromColor(color: backgroundImageColor)
+        }
     }
     
     public override init(image: UIImage?) {
@@ -49,16 +52,6 @@ public class ScratchImageView: UIImageView {
         super.init(coder: aDecoder)
         
         commonInit()
-    }
-    
-    // MARK: - Overridden: UIImageView
-    
-    override open func layoutSubviews() {
-        super.layoutSubviews()
-        
-        if let backgroundImageColor = backgroundImageColor {
-            image = UIImage.fromColor(color: backgroundImageColor)
-        }
     }
     
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
