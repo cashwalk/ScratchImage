@@ -19,6 +19,9 @@ public class ScratchImageView: UIImageView {
     
     public var lineType: CGLineCap = .square
     public var lineWidth: CGFloat = 20.0
+    public var scratchedPercent: Double {
+        return getTransparentPixelsPercent()
+    }
     public weak var delegate: ScratchImageViewDelegate?
     
     private(set) var backgroundImage: UIImage?
@@ -85,10 +88,6 @@ public class ScratchImageView: UIImageView {
     }
     
     // MARK: - Public methods
-    
-    public func getScratchPercent() -> Double {
-        return scratched / Double(frame.width * frame.height)
-    }
     
     public func reset() {
         if let backgroundImageColor = backgroundImageColor {
