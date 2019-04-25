@@ -12,11 +12,9 @@ import CoreGraphics
 extension UIView {
     func getSnapshot() -> CGImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, 0.0)
-        guard let ctx = UIGraphicsGetCurrentContext() else {
-            return nil
-        }
+        guard let context = UIGraphicsGetCurrentContext() else {return nil}
         
-        layer.render(in: ctx)
+        layer.render(in: context)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image?.cgImage
