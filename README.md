@@ -18,6 +18,34 @@ ScratchImage is scratchable UIImageView
 </p>
 
 
+## Usage
+
+#### Initialization
+```swift
+let scratchImage = ScratchImageView(image: UIImage(named: "image"))
+let scratchImage = ScratchImageView(imageColor: .brown)
+```
+
+#### Reset
+```swift
+scratchImage.reset()
+```
+
+#### Scratched precent
+```swift
+scratchImage.scratchedPercent
+```
+
+#### Line
+```swift
+// line type
+scratchImage.lineType = .square // .butt, .round
+
+// line width
+scratchImage.lineWidth = 10.0
+```
+
+
 ## Installation
 
 #### CocoaPods (iOS 8+)
