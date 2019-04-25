@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ScratchImage'
-  s.version      = '0.2.1'
+  s.version      = '1.0.0'
   s.summary      = 'Scratchable UIImageView'
   s.homepage     = 'https://github.com/cashwalk/ScratchImage'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
