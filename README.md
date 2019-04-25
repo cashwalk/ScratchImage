@@ -6,11 +6,10 @@
 <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 </p>
 
+<p align="center">
 ScratchImage is scratchable UIImageView
-
-<div>
 <img width="375" src="https://user-images.githubusercontent.com/15151687/40161385-9b31ed20-59eb-11e8-849a-47ace71710e6.png">
-</div>
+</p>
 
 
 ## Installation
