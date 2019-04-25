@@ -2,8 +2,8 @@
 //  ScratchImageView.swift
 //  ScratchImageView
 //
-//  Created by HanSangbeom on 2017. 4. 14..
-//  Copyright © 2017년 Cashwalk, Inc. All rights reserved.
+//  Created by cashwalk on 2017. 4. 14..
+//  Copyright © 2017 cashwalk, Inc. All rights reserved.
 //
 
 import UIKit

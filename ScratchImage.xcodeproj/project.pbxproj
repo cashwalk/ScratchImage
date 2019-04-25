@@ -7,147 +7,150 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		658E8BAD226EDFCB008423C5 /* ScratchImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 658E8BAB226EDFCB008423C5 /* ScratchImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		658E8BB7226EDFFE008423C5 /* ScratchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E8BB5226EDFFE008423C5 /* ScratchImageView.swift */; };
-		658E8BB8226EDFFE008423C5 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E8BB6226EDFFE008423C5 /* UIImageExtension.swift */; };
-		658E8BC0226EE028008423C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E8BBF226EE028008423C5 /* AppDelegate.swift */; };
-		658E8BC2226EE028008423C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658E8BC1226EE028008423C5 /* ViewController.swift */; };
-		658E8BC7226EE029008423C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658E8BC6226EE029008423C5 /* Assets.xcassets */; };
-		658E8BCA226EE029008423C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658E8BC8226EE029008423C5 /* LaunchScreen.storyboard */; };
-		658E8BD0226EE08B008423C5 /* ScratchImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 658E8BA8226EDFCB008423C5 /* ScratchImage.framework */; };
-		658E8BD2226EE0B5008423C5 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 658E8BD1226EE0B5008423C5 /* image.jpg */; };
+		6501C47022715FE1008D8ED4 /* ScratchImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 6501C46E22715FE1008D8ED4 /* ScratchImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6501C47B22716080008D8ED4 /* UIImage-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501C47822716080008D8ED4 /* UIImage-Extensions.swift */; };
+		6501C47C22716080008D8ED4 /* UIView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501C47922716080008D8ED4 /* UIView-Extensions.swift */; };
+		6501C47D22716080008D8ED4 /* ScratchImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501C47A22716080008D8ED4 /* ScratchImageView.swift */; };
+		6501C497227160CC008D8ED4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501C495227160CB008D8ED4 /* ViewController.swift */; };
+		6501C498227160CC008D8ED4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6501C496227160CB008D8ED4 /* AppDelegate.swift */; };
+		6501C49E227160D6008D8ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6501C49A227160D6008D8ED4 /* Assets.xcassets */; };
+		6501C49F227160D6008D8ED4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6501C49B227160D6008D8ED4 /* LaunchScreen.storyboard */; };
+		6501C4A0227160D6008D8ED4 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6501C49D227160D6008D8ED4 /* image.jpg */; };
+		6501C4A322717132008D8ED4 /* ScratchImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6501C46B22715FE1008D8ED4 /* ScratchImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		658E8BA8226EDFCB008423C5 /* ScratchImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScratchImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		658E8BAB226EDFCB008423C5 /* ScratchImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScratchImage.h; sourceTree = "<group>"; };
-		658E8BAC226EDFCB008423C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		658E8BB5226EDFFE008423C5 /* ScratchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchImageView.swift; sourceTree = "<group>"; };
-		658E8BB6226EDFFE008423C5 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
-		658E8BBD226EE028008423C5 /* ScratchImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		658E8BBF226EE028008423C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		658E8BC1226EE028008423C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		658E8BC6226EE029008423C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		658E8BC9226EE029008423C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		658E8BCB226EE029008423C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		658E8BD1226EE0B5008423C5 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		6501C46B22715FE1008D8ED4 /* ScratchImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScratchImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6501C46E22715FE1008D8ED4 /* ScratchImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScratchImage.h; sourceTree = "<group>"; };
+		6501C46F22715FE1008D8ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6501C47822716080008D8ED4 /* UIImage-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extensions.swift"; sourceTree = "<group>"; };
+		6501C47922716080008D8ED4 /* UIView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Extensions.swift"; sourceTree = "<group>"; };
+		6501C47A22716080008D8ED4 /* ScratchImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchImageView.swift; sourceTree = "<group>"; };
+		6501C482227160A6008D8ED4 /* ScratchImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6501C490227160A8008D8ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6501C495227160CB008D8ED4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6501C496227160CB008D8ED4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6501C49A227160D6008D8ED4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6501C49C227160D6008D8ED4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6501C49D227160D6008D8ED4 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		658E8BA5226EDFCB008423C5 /* Frameworks */ = {
+		6501C46822715FE1008D8ED4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		658E8BBA226EE028008423C5 /* Frameworks */ = {
+		6501C47F227160A6008D8ED4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658E8BD0226EE08B008423C5 /* ScratchImage.framework in Frameworks */,
+				6501C4A322717132008D8ED4 /* ScratchImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		658E8B9E226EDFCB008423C5 = {
+		6501C46122715FE1008D8ED4 = {
 			isa = PBXGroup;
 			children = (
-				658E8BAB226EDFCB008423C5 /* ScratchImage.h */,
-				658E8BAC226EDFCB008423C5 /* Info.plist */,
-				658E8BB3226EDFFE008423C5 /* Sources */,
-				658E8BBE226EE028008423C5 /* ScratchImageExample */,
-				658E8BA9226EDFCB008423C5 /* Products */,
-				658E8BCF226EE08B008423C5 /* Frameworks */,
+				6501C46E22715FE1008D8ED4 /* ScratchImage.h */,
+				6501C46F22715FE1008D8ED4 /* Info.plist */,
+				6501C47622716080008D8ED4 /* Sources */,
+				6501C483227160A6008D8ED4 /* ScratchImageExample */,
+				6501C46C22715FE1008D8ED4 /* Products */,
+				6501C4A122716109008D8ED4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		658E8BA9226EDFCB008423C5 /* Products */ = {
+		6501C46C22715FE1008D8ED4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				658E8BA8226EDFCB008423C5 /* ScratchImage.framework */,
-				658E8BBD226EE028008423C5 /* ScratchImageExample.app */,
+				6501C46B22715FE1008D8ED4 /* ScratchImage.framework */,
+				6501C482227160A6008D8ED4 /* ScratchImageExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		658E8BB3226EDFFE008423C5 /* Sources */ = {
+		6501C47622716080008D8ED4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				658E8BB4226EDFFE008423C5 /* ScratchImage */,
+				6501C47722716080008D8ED4 /* ScratchImage */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		658E8BB4226EDFFE008423C5 /* ScratchImage */ = {
+		6501C47722716080008D8ED4 /* ScratchImage */ = {
 			isa = PBXGroup;
 			children = (
-				658E8BB5226EDFFE008423C5 /* ScratchImageView.swift */,
-				658E8BB6226EDFFE008423C5 /* UIImageExtension.swift */,
+				6501C47822716080008D8ED4 /* UIImage-Extensions.swift */,
+				6501C47922716080008D8ED4 /* UIView-Extensions.swift */,
+				6501C47A22716080008D8ED4 /* ScratchImageView.swift */,
 			);
 			path = ScratchImage;
 			sourceTree = "<group>";
 		};
-		658E8BBE226EE028008423C5 /* ScratchImageExample */ = {
+		6501C483227160A6008D8ED4 /* ScratchImageExample */ = {
 			isa = PBXGroup;
 			children = (
-				658E8BCB226EE029008423C5 /* Info.plist */,
-				658E8BD4226EE0C2008423C5 /* Resources */,
-				658E8BD3226EE0BA008423C5 /* Sources */,
+				6501C499227160D6008D8ED4 /* Resources */,
+				6501C494227160CB008D8ED4 /* Sources */,
+				6501C490227160A8008D8ED4 /* Info.plist */,
 			);
 			path = ScratchImageExample;
 			sourceTree = "<group>";
 		};
-		658E8BCF226EE08B008423C5 /* Frameworks */ = {
+		6501C494227160CB008D8ED4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6501C495227160CB008D8ED4 /* ViewController.swift */,
+				6501C496227160CB008D8ED4 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		6501C499227160D6008D8ED4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6501C49A227160D6008D8ED4 /* Assets.xcassets */,
+				6501C49B227160D6008D8ED4 /* LaunchScreen.storyboard */,
+				6501C49D227160D6008D8ED4 /* image.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6501C4A122716109008D8ED4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		658E8BD3226EE0BA008423C5 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				658E8BBF226EE028008423C5 /* AppDelegate.swift */,
-				658E8BC1226EE028008423C5 /* ViewController.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		658E8BD4226EE0C2008423C5 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				658E8BD1226EE0B5008423C5 /* image.jpg */,
-				658E8BC6226EE029008423C5 /* Assets.xcassets */,
-				658E8BC8226EE029008423C5 /* LaunchScreen.storyboard */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		658E8BA3226EDFCB008423C5 /* Headers */ = {
+		6501C46622715FE1008D8ED4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658E8BAD226EDFCB008423C5 /* ScratchImage.h in Headers */,
+				6501C47022715FE1008D8ED4 /* ScratchImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		658E8BA7226EDFCB008423C5 /* ScratchImage */ = {
+		6501C46A22715FE1008D8ED4 /* ScratchImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 658E8BB0226EDFCB008423C5 /* Build configuration list for PBXNativeTarget "ScratchImage" */;
+			buildConfigurationList = 6501C47322715FE1008D8ED4 /* Build configuration list for PBXNativeTarget "ScratchImage" */;
 			buildPhases = (
-				658E8BA3226EDFCB008423C5 /* Headers */,
-				658E8BA4226EDFCB008423C5 /* Sources */,
-				658E8BA5226EDFCB008423C5 /* Frameworks */,
-				658E8BA6226EDFCB008423C5 /* Resources */,
+				6501C46622715FE1008D8ED4 /* Headers */,
+				6501C46722715FE1008D8ED4 /* Sources */,
+				6501C46822715FE1008D8ED4 /* Frameworks */,
+				6501C46922715FE1008D8ED4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -155,16 +158,16 @@
 			);
 			name = ScratchImage;
 			productName = ScratchImage;
-			productReference = 658E8BA8226EDFCB008423C5 /* ScratchImage.framework */;
+			productReference = 6501C46B22715FE1008D8ED4 /* ScratchImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		658E8BBC226EE028008423C5 /* ScratchImageExample */ = {
+		6501C481227160A6008D8ED4 /* ScratchImageExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 658E8BCC226EE029008423C5 /* Build configuration list for PBXNativeTarget "ScratchImageExample" */;
+			buildConfigurationList = 6501C491227160A8008D8ED4 /* Build configuration list for PBXNativeTarget "ScratchImageExample" */;
 			buildPhases = (
-				658E8BB9226EE028008423C5 /* Sources */,
-				658E8BBA226EE028008423C5 /* Frameworks */,
-				658E8BBB226EE028008423C5 /* Resources */,
+				6501C47E227160A6008D8ED4 /* Sources */,
+				6501C47F227160A6008D8ED4 /* Frameworks */,
+				6501C480227160A6008D8ED4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -172,28 +175,28 @@
 			);
 			name = ScratchImageExample;
 			productName = ScratchImageExample;
-			productReference = 658E8BBD226EE028008423C5 /* ScratchImageExample.app */;
+			productReference = 6501C482227160A6008D8ED4 /* ScratchImageExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		658E8B9F226EDFCB008423C5 /* Project object */ = {
+		6501C46222715FE1008D8ED4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = cashwalk;
 				TargetAttributes = {
-					658E8BA7226EDFCB008423C5 = {
+					6501C46A22715FE1008D8ED4 = {
 						CreatedOnToolsVersion = 10.2;
 					};
-					658E8BBC226EE028008423C5 = {
+					6501C481227160A6008D8ED4 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = 658E8BA2226EDFCB008423C5 /* Build configuration list for PBXProject "ScratchImage" */;
+			buildConfigurationList = 6501C46522715FE1008D8ED4 /* Build configuration list for PBXProject "ScratchImage" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,63 +204,64 @@
 				en,
 				Base,
 			);
-			mainGroup = 658E8B9E226EDFCB008423C5;
-			productRefGroup = 658E8BA9226EDFCB008423C5 /* Products */;
+			mainGroup = 6501C46122715FE1008D8ED4;
+			productRefGroup = 6501C46C22715FE1008D8ED4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				658E8BA7226EDFCB008423C5 /* ScratchImage */,
-				658E8BBC226EE028008423C5 /* ScratchImageExample */,
+				6501C46A22715FE1008D8ED4 /* ScratchImage */,
+				6501C481227160A6008D8ED4 /* ScratchImageExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		658E8BA6226EDFCB008423C5 /* Resources */ = {
+		6501C46922715FE1008D8ED4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		658E8BBB226EE028008423C5 /* Resources */ = {
+		6501C480227160A6008D8ED4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658E8BCA226EE029008423C5 /* LaunchScreen.storyboard in Resources */,
-				658E8BC7226EE029008423C5 /* Assets.xcassets in Resources */,
-				658E8BD2226EE0B5008423C5 /* image.jpg in Resources */,
+				6501C49E227160D6008D8ED4 /* Assets.xcassets in Resources */,
+				6501C49F227160D6008D8ED4 /* LaunchScreen.storyboard in Resources */,
+				6501C4A0227160D6008D8ED4 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		658E8BA4226EDFCB008423C5 /* Sources */ = {
+		6501C46722715FE1008D8ED4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658E8BB7226EDFFE008423C5 /* ScratchImageView.swift in Sources */,
-				658E8BB8226EDFFE008423C5 /* UIImageExtension.swift in Sources */,
+				6501C47D22716080008D8ED4 /* ScratchImageView.swift in Sources */,
+				6501C47C22716080008D8ED4 /* UIView-Extensions.swift in Sources */,
+				6501C47B22716080008D8ED4 /* UIImage-Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		658E8BB9226EE028008423C5 /* Sources */ = {
+		6501C47E227160A6008D8ED4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658E8BC2226EE028008423C5 /* ViewController.swift in Sources */,
-				658E8BC0226EE028008423C5 /* AppDelegate.swift in Sources */,
+				6501C498227160CC008D8ED4 /* AppDelegate.swift in Sources */,
+				6501C497227160CC008D8ED4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		658E8BC8226EE029008423C5 /* LaunchScreen.storyboard */ = {
+		6501C49B227160D6008D8ED4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				658E8BC9226EE029008423C5 /* Base */,
+				6501C49C227160D6008D8ED4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -265,7 +269,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		658E8BAE226EDFCB008423C5 /* Debug */ = {
+		6501C47122715FE1008D8ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,13 +328,12 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		658E8BAF226EDFCB008423C5 /* Release */ = {
+		6501C47222715FE1008D8ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -382,14 +385,13 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		658E8BB1226EDFCB008423C5 /* Debug */ = {
+		6501C47422715FE1008D8ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -410,12 +412,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		658E8BB2226EDFCB008423C5 /* Release */ = {
+		6501C47522715FE1008D8ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
@@ -436,12 +438,12 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		658E8BCD226EE029008423C5 /* Debug */ = {
+		6501C492227160A8008D8ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -457,12 +459,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cashwalk.ScratchImageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		658E8BCE226EE029008423C5 /* Release */ = {
+		6501C493227160A8008D8ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -478,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cashwalk.ScratchImageExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -486,34 +488,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		658E8BA2226EDFCB008423C5 /* Build configuration list for PBXProject "ScratchImage" */ = {
+		6501C46522715FE1008D8ED4 /* Build configuration list for PBXProject "ScratchImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				658E8BAE226EDFCB008423C5 /* Debug */,
-				658E8BAF226EDFCB008423C5 /* Release */,
+				6501C47122715FE1008D8ED4 /* Debug */,
+				6501C47222715FE1008D8ED4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		658E8BB0226EDFCB008423C5 /* Build configuration list for PBXNativeTarget "ScratchImage" */ = {
+		6501C47322715FE1008D8ED4 /* Build configuration list for PBXNativeTarget "ScratchImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				658E8BB1226EDFCB008423C5 /* Debug */,
-				658E8BB2226EDFCB008423C5 /* Release */,
+				6501C47422715FE1008D8ED4 /* Debug */,
+				6501C47522715FE1008D8ED4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		658E8BCC226EE029008423C5 /* Build configuration list for PBXNativeTarget "ScratchImageExample" */ = {
+		6501C491227160A8008D8ED4 /* Build configuration list for PBXNativeTarget "ScratchImageExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				658E8BCD226EE029008423C5 /* Debug */,
-				658E8BCE226EE029008423C5 /* Release */,
+				6501C492227160A8008D8ED4 /* Debug */,
+				6501C493227160A8008D8ED4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 658E8B9F226EDFCB008423C5 /* Project object */;
+	rootObject = 6501C46222715FE1008D8ED4 /* Project object */;
 }

@@ -3,7 +3,7 @@
 //  ScratchImageExample
 //
 //  Created by cashwalk on 2018. 5. 17..
-//  Copyright © 2018년 cashwalk. All rights reserved.
+//  Copyright © 2018 cashwalk. All rights reserved.
 //
 
 import UIKit
@@ -33,6 +33,8 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor = .black
+        label.text = "0.00%"
         return label
     }()
     
@@ -56,10 +58,10 @@ class ViewController: UIViewController {
         resetButton.topAnchor.constraint(equalTo: topLayoutGuide.bottomAnchor, constant: 32).isActive = true
         resetButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16).isActive = true
         
-        imageView.topAnchor.constraint(equalTo: resetButton.bottomAnchor, constant: 32).isActive = true
-        imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        imageView.topAnchor.constraint(equalTo: resetButton.bottomAnchor, constant: 16).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: percentLabel.topAnchor, constant: -16).isActive = true
         
         scratchImageView.leadingAnchor.constraint(equalTo: imageView.leadingAnchor).isActive = true
         scratchImageView.topAnchor.constraint(equalTo: imageView.topAnchor).isActive = true
@@ -97,7 +99,7 @@ extension ViewController: ScratchImageViewDelegate {
     }
     
     func scratchImageViewScratchMoved(_ imageView: ScratchImageView) {
-        percentLabel.text = "\( NSString(format: "%.2f", imageView.getScratchPercent() * 100))%"
+        percentLabel.text = "\( NSString(format: "%.2f", imageView.scratchedPercent * 100))%"
     }
     
 }

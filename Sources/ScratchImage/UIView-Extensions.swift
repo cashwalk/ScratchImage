@@ -2,8 +2,8 @@
 //  UIView-Extensions.swift
 //  ScratchImage
 //
-//  Created by Cashwalk on 25/04/2019.
-//  Copyright © 2019 Cashwalk. All rights reserved.
+//  Created by cashwalk on 25/04/2019.
+//  Copyright © 2019 cashwalk. All rights reserved.
 //
 
 import UIKit

@@ -2,8 +2,8 @@
 //  ScratchImage.h
 //  ScratchImage
 //
-//  Created by cashwalk on 23/04/2019.
-//  Copyright © 2018 cashwalk. All rights reserved.
+//  Created by cashwalk on 25/04/2019.
+//  Copyright © 2019 cashwalk. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
