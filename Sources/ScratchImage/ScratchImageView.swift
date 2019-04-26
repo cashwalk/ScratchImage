@@ -48,10 +48,8 @@ public class ScratchImageView: UIImageView {
         commonInit()
     }
     
-    public required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        commonInit()
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
