@@ -20,7 +20,10 @@ public class ScratchImageView: UIImageView {
     public var lineType: CGLineCap = .square
     public var lineWidth: CGFloat = 20.0
     public var scratchedPercent: Double {
-        return getTransparentPixelsPercent()
+        guard UIScreen.main.bounds.width == 320 else {
+            return getTransparentPixelsPercent()
+        }
+        return scratched / Double(frame.width * frame.height)
     }
     public weak var delegate: ScratchImageViewDelegate?
     
